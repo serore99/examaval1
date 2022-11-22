@@ -2,3 +2,4 @@
 5. mv si.txt ./si
 6. tail -n +2 Alumnos.txt | awk '{print $1 " " $2 "-" $5}'
 7. grep "González" Alumnos.txt | awk '!visited[$1]++' | wc -l
+8. sed -i 's/Vicente/Pepe/g' Alumnos.txt
