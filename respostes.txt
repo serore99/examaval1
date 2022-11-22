@@ -1,2 +1,3 @@
 3. grep -n "SI" Alumnos.txt | awk -F ":" '{print $1}' >> si.txt
 5. mv si.txt ./si
+6. tail -n +2 Alumnos.txt | awk '{print $1 " " $2 "-" $5}'
