@@ -4,3 +4,4 @@
 7. grep "González" Alumnos.txt | awk '!visited[$1]++' | wc -l
 8. sed -i 's/Vicente/Pepe/g' Alumnos.txt | tee Alumnos.txt
 9. cat Alumnos.txt| awk '{if($4 >= 2010 && $4 <= 2019) print}'
+10. grep ^J Alumnos.txt | awk '{print $1,$2}' | uniq
